@@ -20,6 +20,7 @@
  */
 function isInteger(value) {
   // Implementation goes here.
+  return Number.isInteger(value);
 }
 
 /**
@@ -31,6 +32,7 @@ function isInteger(value) {
  */
 function logicalAnd(a, b) {
   // Implementation goes here.
+  return a && b;
 }
 
 /**
@@ -42,6 +44,7 @@ function logicalAnd(a, b) {
  */
 function logicalOr(a, b) {
   // Implementation goes here.
+  return a || b;
 }
 
 /**
@@ -52,6 +55,7 @@ function logicalOr(a, b) {
  */
 function invertBoolean(bool) {
   // Implementation goes here.
+  return !bool;
 }
 
 /**
@@ -62,6 +66,15 @@ function invertBoolean(bool) {
  */
 function countDigits(num) {
   // Implementation goes here.
+  if (num === 0) {
+    return 1;
+  }
+  let count = 0;
+  while (num !== 0) {
+    num = Math.floor(num / 10);
+    count++;
+  }
+  return count;
 }
 
 /**
@@ -72,6 +85,12 @@ function countDigits(num) {
  */
 function sumOfDigits(num) {
   // Implementation goes here.
+  let sum = 0;
+  while (num !== 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
 }
 
 /**
@@ -82,6 +101,12 @@ function sumOfDigits(num) {
  */
 function reverseNumber(num) {
   // Implementation goes here.
+  let reversed = 0;
+  while (num !== 0) {
+    reversed = reversed * 10 + num % 10;
+    num = Math.floor(num / 10);
+  }
+  return reversed;
 }
 
 /**
@@ -94,6 +119,7 @@ function reverseNumber(num) {
  */
 function isWithinRange(num, min, max) {
   // Implementation goes here.
+  return num >= min && num <= max;
 }
 
 // Export functions

@@ -24,7 +24,8 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectanglePerimeter(width, height) {
-  // Implementation goes here.
+  const perimeter = 2 * (width + height);
+  return parseFloat(perimeter.toFixed(2));
 }
 
 /**
@@ -37,7 +38,8 @@ function rectanglePerimeter(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectangleArea(width, height) {
-  // Implementation goes here.
+  const area = width * height;
+  return parseFloat(area.toFixed(2));
 }
 
 /**
@@ -52,7 +54,8 @@ function rectangleArea(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleCircumference(radius) {
-  // Implementation goes here.
+  const circumference = 2 * Math.PI * radius;
+  return parseFloat(circumference.toFixed(2));
 }
 
 /**
@@ -64,7 +67,8 @@ function circleCircumference(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleArea(radius) {
-  // Implementation goes here.
+  const area = Math.PI * Math.pow(radius, 2);
+  return parseFloat(area.toFixed(2));
 }
 
 /**
@@ -77,7 +81,8 @@ function circleArea(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function triangleArea(base, height) {
-  // Implementation goes here.
+  const area = 0.5 * base * height;
+  return parseFloat(area.toFixed(2));
 }
 
 /**
@@ -90,7 +95,8 @@ function triangleArea(base, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function pythagorean(sideA, sideB) {
-  // Implementation goes here.
+  const hypotenuse = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+  return parseFloat(hypotenuse.toFixed(2));
 }
 
 /**
@@ -103,7 +109,8 @@ function pythagorean(sideA, sideB) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function rectangleDiagonal(width, height) {
-  // Implementation goes here.
+  const diagonal = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
+  return parseFloat(diagonal.toFixed(2));
 }
 
 /**
@@ -119,7 +126,8 @@ function rectangleDiagonal(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division
  */
 function trapezoidArea(base1, base2, height) {
-  // Implementation goes here.
+  const area = ((base1 + base2) / 2) * height;
+  return parseFloat(area.toFixed(2));
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

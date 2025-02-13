@@ -20,6 +20,7 @@
  */
 function isString(str) {
   // Implementation goes here.
+  return typeof str === 'string';
 }
 
 /**
@@ -30,6 +31,7 @@ function isString(str) {
  */
 function isBlank(str) {
   // Implementation goes here.
+  return str === '';
 }
 
 /**
@@ -43,6 +45,7 @@ function isBlank(str) {
  */
 function sayHelloOrBye(name, num) {
   // Implementation goes here.
+  return (num === 0 ? 'Hello ' : 'Bye ') + name;
 }
 
 /**
@@ -54,6 +57,7 @@ function sayHelloOrBye(name, num) {
  */
 function compareStrings(str1, str2) {
   // Implementation goes here.
+  return str1 === str2;
 }
 
 /* -------------------------------------------
@@ -68,6 +72,7 @@ function compareStrings(str1, str2) {
  */
 function isUpperCase(str) {
   // Implementation goes here.
+  return str === str.toUpperCase();
 }
 
 /**
@@ -78,6 +83,7 @@ function isUpperCase(str) {
  */
 function isLowerCase(str) {
   // Implementation goes here.
+  return str === str.toLowerCase();
 }
 
 /**
@@ -89,6 +95,7 @@ function isLowerCase(str) {
  */
 function hasLength(str, length) {
   // Implementation goes here.
+  return str.length === length;
 }
 
 /**
@@ -100,6 +107,7 @@ function hasLength(str, length) {
  */
 function startsWithSubstring(str, prefix) {
   // Implementation goes here.
+  return str.startsWith(prefix);
 }
 
 /**
@@ -111,6 +119,7 @@ function startsWithSubstring(str, prefix) {
  */
 function endsWithSubstring(str, suffix) {
   // Implementation goes here.
+  return str.endsWith(suffix);
 }
 
 /**
@@ -122,6 +131,7 @@ function endsWithSubstring(str, suffix) {
  */
 function containsSubstring(str, substring) {
   // Implementation goes here.
+  return str.includes(substring);
 }
 
 /**
@@ -131,6 +141,7 @@ function containsSubstring(str, substring) {
  */
 function isAlpha(str) {
   // Implementation goes here.
+  return /^[A-Za-z]+$/.test(str);
 }
 
 /**
@@ -140,6 +151,7 @@ function isAlpha(str) {
  */
 function containsOnlyDigits(str) {
   // Implementation goes here.
+  return /^\d+$/.test(str);
 }
 
 /**
@@ -150,6 +162,7 @@ function containsOnlyDigits(str) {
  */
 function isEmptyOrWhitespace(str) {
   // Implementation goes here.
+  return str.trim() === '';
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

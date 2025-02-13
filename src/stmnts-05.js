@@ -19,6 +19,7 @@
  */
 function isInteger(value) {
   // Implementation goes here.
+  return Number.isInteger(value);
 }
 
 /**
@@ -29,6 +30,7 @@ function isInteger(value) {
  */
 function isOdd(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && num % 2 !== 0;
 }
 
 /**
@@ -39,6 +41,7 @@ function isOdd(num) {
  */
 function isEven(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && num % 2 === 0;
 }
 
 /**
@@ -49,6 +52,7 @@ function isEven(num) {
  */
 function isNegative(value) {
   // Implementation goes here.
+  return Number.isInteger(value) && value < 0;
 }
 
 /**
@@ -59,6 +63,7 @@ function isNegative(value) {
  */
 function isPositive(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && num > 0;
 }
 
 /**
@@ -68,6 +73,7 @@ function isPositive(num) {
  */
 function isZero(num) {
   // Implementation goes here.
+  return num === 0;
 }
 
 /**
@@ -77,6 +83,7 @@ function isZero(num) {
  */
 function isNonNegative(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && num >= 0;
 }
 
 /**
@@ -88,6 +95,7 @@ function isNonNegative(num) {
  */
 function isDivisibleBy(a, b) {
   // Implementation goes here.
+  return Number.isInteger(a) && Number.isInteger(b) && a % b === 0;
 }
 
 /**
@@ -100,6 +108,7 @@ function isDivisibleBy(a, b) {
  */
 function isBetween(num, min, max) {
   // Implementation goes here.
+  return Number.isInteger(num) && Number.isInteger(min) && Number.isInteger(max) && num >= min && num <= max;
 }
 
 /**
@@ -110,6 +119,7 @@ function isBetween(num, min, max) {
  */
 function isSquare(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && num >= 0 && Math.sqrt(num) % 1 === 0;
 }
 
 /**
@@ -120,6 +130,7 @@ function isSquare(num) {
  */
 function isCube(num) {
   // Implementation goes here.
+  return Number.isInteger(num) && Math.cbrt(num) % 1 === 0;
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

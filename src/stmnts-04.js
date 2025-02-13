@@ -24,6 +24,8 @@
  */
 function fahrenheitToCelsius(fahrenheit) {
   // Implementation goes here.
+  const celsius = (fahrenheit - 32) * 5 / 9;
+  return parseFloat(celsius.toFixed(2));
 }
 
 /**
@@ -37,6 +39,8 @@ function fahrenheitToCelsius(fahrenheit) {
  */
 function celsiusToFahrenheit(celsius) {
   // Implementation goes here.
+  const fahrenheit = (celsius * 9 / 5) + 32;
+  return parseFloat(fahrenheit.toFixed(2));
 }
 
 /**
@@ -49,6 +53,8 @@ function celsiusToFahrenheit(celsius) {
  */
 function kelvinToCelsius(kelvin) {
   // Implementation goes here.
+  const celsius = kelvin - 273.15;
+  return parseFloat(celsius.toFixed(2));
 }
 
 /**
@@ -61,6 +67,8 @@ function kelvinToCelsius(kelvin) {
  */
 function celsiusToKelvin(celsius) {
   // Implementation goes here.
+  const kelvin = celsius + 273.15;
+  return parseFloat(kelvin.toFixed(2));
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.
